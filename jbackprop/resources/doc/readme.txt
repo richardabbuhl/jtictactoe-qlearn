@@ -1,5 +1,5 @@
 This document describes how to get you up and
-running using jmentor.
+running using jbackprop.
 
 Send comments to rabbuhl@hotmail.com.
 
@@ -7,21 +7,21 @@ Send comments to rabbuhl@hotmail.com.
 - Overview
 ---------------------------------------------
 
-What is JMentor?
+What is JBackprop?
 
-JMentor supports multi-layer perceptron neural networks 
+JBackprop supports multi-layer perceptron neural networks
 which are trained using the back-propagation learning 
 algorithm.  
 
 It contains two executables:
 
-  1. jmentor.jar:  can be run using JDK 1.3 or greater, 
-  2. jmentor.exe:  windows executable built using the gcj 
+  1. jbackprop.jar:  can be run using JDK 1.3 or greater,
+  2. jbackprop.exe:  windows executable built using the gcj
      compiler for java. 
 
-What can you do with JMentor?
+What can you do with JBackprop?
 
-JMentor is a tool for solving problems.  Using JMentor, 
+JBackprop is a tool for solving problems.  Using JBackprop,
 you can create, test, train, and apply neural networks 
 to solve any of these types of problems:
 
@@ -32,7 +32,7 @@ to solve any of these types of problems:
      soccer game scores, or the stock market, 
   4. Creating approximation fuctions. 
 
-How do I install JMentor?
+How do I install JBackprop?
 
 Unzip the release into a directory.  
 
@@ -40,18 +40,18 @@ Unzip the release into a directory.
 - Running
 ---------------------------------------------
 
-Run jmentor using the command jmentor.exe for
-the executable or "java -jar jmentor.jar" for 
+Run jbackprop using the command jbackprop.exe for
+the executable or "java -jar jbackprop.jar" for
 the jar file.  This will display the help screen.
 
-The normal commands for running jmentor to solve
+The normal commands for running jbackprop to solve
 the xor problem are
 
-   jmentor.exe -p xor.trn xor.xml
+   jbackprop.exe -p xor.trn xor.xml
 
 or 
 
-   java -jar jmentor.jar -p xor.trn xor.xml
+   java -jar jbackprop.jar -p xor.trn xor.xml
 
 ---------------------------------------------
 - XML File
@@ -112,14 +112,14 @@ or
 - Building (source available upon request)
 ---------------------------------------------
 
-There are two options for building jmentor.
+There are two options for building jbackprop.
 
 OPTION - 1, GCJ Compiler
 
    Steps:
-   1. Type make to build jmentor.
+   1. Type make to build jbackprop.
 
-OPTION - 2, Build jmentor.jar
+OPTION - 2, Build jbackprop.jar
 
    Steps:
    1. Make sure you have ant installed.
@@ -128,6 +128,9 @@ OPTION - 2, Build jmentor.jar
 ---------------------------------------------
 - Version history
 ---------------------------------------------
+
++ Version 1.0.1:  February 9, 2005
+Updated release.  Renamed to JBackprop.
 
 + Version 1.0.0:  December 9, 2002
 First public Java version.
