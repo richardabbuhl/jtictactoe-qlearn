@@ -82,24 +82,16 @@
     <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
   </component>
   <component name="CvsTabbedWindow">
-    <UpdateInfo EnvName="UPDATE_FILES_OR_DIRECTORY" date="2/9/05 8:22 AM">
+    <UpdateInfo EnvName="UPDATE_FILES_OR_DIRECTORY" date="2/9/05 1:42 PM">
       <FileInformation>
         <MODIFIED>
-          <PATH>C:\RAbbuhl_Data\mydev\jbackprop\build.xml</PATH>
-          <PATH>C:\RAbbuhl_Data\mydev\jbackprop\src\com\jmentor\jbackprop\bpnetwork.java</PATH>
-          <PATH>C:\RAbbuhl_Data\mydev\jbackprop\src\com\jmentor\jbackprop\cputime.java</PATH>
-          <PATH>C:\RAbbuhl_Data\mydev\jbackprop\src\com\jmentor\jbackprop\mtrain.java</PATH>
-          <PATH>C:\RAbbuhl_Data\mydev\jbackprop\src\com\jmentor\jbackprop\network.java</PATH>
-          <PATH>C:\RAbbuhl_Data\mydev\jbackprop\src\com\jmentor\jbackprop\networkrec.java</PATH>
+          <PATH>D:\vocodev\jbackprop\build.xml</PATH>
+          <PATH>D:\vocodev\jbackprop\jbackprop.iws</PATH>
         </MODIFIED>
         <MERGED_WITH_CONFLICTS />
         <MERGED />
         <UNKNOWN />
-        <LOCALLY_ADDED>
-          <PATH>C:\RAbbuhl_Data\mydev\jbackprop\jbackprop.iml</PATH>
-          <PATH>C:\RAbbuhl_Data\mydev\jbackprop\jbackprop.ipr</PATH>
-          <PATH>C:\RAbbuhl_Data\mydev\jbackprop\jbackprop.iws</PATH>
-        </LOCALLY_ADDED>
+        <LOCALLY_ADDED />
         <LOCALLY_REMOVED />
         <UPDATED />
         <REMOVED_FROM_REPOSITORY />
@@ -107,11 +99,7 @@
         <CREATED />
         <MOD_REMOVED_FROM_SERVER />
         <LOCALLY_REMOVED_MODIFIED_ON_SERVER />
-        <RESTORED>
-          <PATH>C:\RAbbuhl_Data\mydev\jbackprop\backprop.iml</PATH>
-          <PATH>C:\RAbbuhl_Data\mydev\jbackprop\backprop.ipr</PATH>
-          <PATH>C:\RAbbuhl_Data\mydev\jbackprop\backprop.iws</PATH>
-        </RESTORED>
+        <RESTORED />
         <CREATED_BY_SECOND_PARTY />
       </FileInformation>
     </UpdateInfo>
@@ -162,14 +150,16 @@
   <component name="J2EEProjectPane" />
   <component name="NamedScopeManager" />
   <component name="PackagesPane">
-    <expanded_node url="com.jmentor" module="jbackprop" type="package" />
+    <expanded_node url="com.jmentor.jbackprop" module="jbackprop" type="package" />
     <expanded_node url="com" module="jbackprop" type="package" />
+    <expanded_node url="com.jmentor" module="jbackprop" type="package" />
     <expanded_node url="" module="jbackprop" type="module" />
   </component>
   <component name="ProjectPane">
+    <expanded_node url="file://$PROJECT_DIR$/resources/data" module="jbackprop" type="directory" />
     <expanded_node url="file://$PROJECT_DIR$" module="jbackprop" type="directory" />
+    <expanded_node url="file://$PROJECT_DIR$/resources" module="jbackprop" type="directory" />
     <expanded_node url="" module="jbackprop" type="module" />
-    <expanded_node url="file://$PROJECT_DIR$/modules" module="jbackprop" type="directory" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" splitterProportion="0.5">
@@ -193,6 +183,20 @@
   </component>
   <component name="RunManager">
     <activeType name="Application" />
+    <configuration selected="false" default="true" type="JUnit" factoryName="JUnit">
+      <module name="" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+    </configuration>
     <configuration selected="false" default="true" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
@@ -216,20 +220,6 @@
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
-    </configuration>
-    <configuration selected="false" default="true" type="JUnit" factoryName="JUnit">
-      <module name="" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
     </configuration>
   </component>
   <component name="SelectInManager" />
@@ -281,18 +271,18 @@
     <frame x="-4" y="-4" width="1288" height="1002" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="CVS" active="true" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.32951945" order="-1" />
+      <window_info id="CVS" active="true" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.32951945" order="8" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="7" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.25" order="0" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.15776698" order="0" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="1" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="1" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.32951945" order="-1" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.32951945" order="8" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.4" order="6" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="-1" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="1" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="8" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.25" order="1" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="2" />
-      <window_info id="CVS File View" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="-1" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="2" />
+      <window_info id="CVS File View" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="3" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.4" order="4" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="sliding" type="sliding" visible="false" weight="0.4" order="0" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="2" />
@@ -377,12 +367,47 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/jmentor/jbackprop/cputime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="13" selection-start="1852" selection-end="1852" vertical-scroll-proportion="0.12259615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jmentor/jbackprop/mtrain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="13" selection-start="899" selection-end="899" vertical-scroll-proportion="0.22475961">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jmentor/jbackprop/network.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="30" selection-start="568" selection-end="568" vertical-scroll-proportion="0.18389423">
+        <state line="26" column="13" selection-start="583" selection-end="583" vertical-scroll-proportion="0.22475961">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/jmentor/jbackprop/networkrec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="13" selection-start="454" selection-end="454" vertical-scroll-proportion="0.102163464">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/run/jbackprop.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="20" selection-start="313" selection-end="313" vertical-scroll-proportion="0.5065177">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="36" selection-start="1721" selection-end="1721" vertical-scroll-proportion="0.7906977">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -26,10 +26,6 @@
         <mkdir dir="${classes.dir}"/>
         <javac debug="off" destdir="${classes.dir}" srcdir="${src.dir}"
             includes="src/**, modules/jnanoxml/src/**, modules/jrandom/src/**"/>
-        <!--Copy files to output directory-->
-        <!--copy file="xor.xml" tofile="classes/xor.xml"/-->
-        <!--copy file="mm2.xml" tofile="classes/mm2.xml"/-->
-        <!--copy file="mm.xml" tofile="classes/mm.xml"/-->
     </target>
 
     <target name="build" depends="compile">
@@ -40,6 +36,8 @@
             </manifest>
         </jar>
         <copyfile src="resources/run/jbackprop.bat" dest="${out.dir}/jbackprop.bat"/>
+        <copydir src="resources/data" includes="*.trn" dest="${out.dir}"/>
+        <copydir src="resources/xml" includes="*.xml" dest="${out.dir}"/>
     </target>
 
     <target name="all" depends="build" description="build all"/>
