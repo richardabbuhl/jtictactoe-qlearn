@@ -41,16 +41,13 @@ Unzip the release into a directory.
 ---------------------------------------------
 
 Run jbackprop using the command jbackprop.exe for the executable
-or "java -cp jbackprop.jar com.jmentor.jbackprop.mtrain" for the
-jar file or use the batch file jbackprop.bat.  This will display
-the help screen.
+or for the jar file use the batch file jbackprop.bat.  This will
+display the help screen.
 
 The normal commands for running jbackprop to solve
 the xor problem are
 
    jbackprop.exe -p xor.trn xor.xml
-or
-   java -cp jbackprop.jar com.jmentor.jbackprop.mtrain -p xor.trn xor.xml
 or
    jbackprop.bat
 

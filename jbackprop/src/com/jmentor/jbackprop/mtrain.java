@@ -206,8 +206,8 @@ public class mtrain {
    -------------------------------------------------------------*/
    static void show_usage()
    {
-      System.out.println("JMENTOR V1.0.0, Copyright 2003 Richard Abbuhl.");
-      System.out.println("usage:  jmentor [-srtavx123] -p <pattern file> <XML file>");
+      System.out.println("JBACKPROP V1.0.1, Copyright 2005 Richard Abbuhl.");
+      System.out.println("usage:  jbackprop [-srtavx123] -p <pattern file> <XML file>");
       System.out.println("   -s = start network training (default).");
       System.out.println("   -r = restart network training.");
       System.out.println("   -t = test network.");
