@@ -603,7 +603,7 @@ public class tictactest extends JApplet
     JFrame frame = new JFrame();
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.getContentPane().add(applet, BorderLayout.CENTER);
-    frame.setTitle("Tictactest 1.0, Copyright 2002 Richard Abbuhl");
+    frame.setTitle("jTicTacToe GUI 1.0.1, Copyright 2005 Richard Abbuhl");
     applet.normalInit = false;
     applet.init();
     applet.start();
