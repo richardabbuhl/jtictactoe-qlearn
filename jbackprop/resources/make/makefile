@@ -7,8 +7,8 @@
 CFLAGS = -O3 --CLASSPATH=src:modules/jnanoxml/src
 srcdir=src/com/jmentor/jbackprop
 nandir=modules/jnanoxml/src/com/jmentor/jnanoxml
-objdir=obj
-outdir=temp
+objdir=temp
+outdir=out
 
 SRCOBJ = $(objdir)/mtrain.o $(objdir)/bpnetwork.o $(objdir)/cputime.o $(objdir)/networkrec.o $(objdir)/network.o
 NANOBJ = $(objdir)/XMLElement.o $(objdir)/XMLParseException.o

@@ -5,7 +5,7 @@
     <property environment="env"/>
     <property name="src.dir" value="${basedir}"/>
     <property name="out.dir" value="${basedir}/out"/>
-    <property name="obj.dir" value="${basedir}/obj"/>
+    <property name="temp.dir" value="${basedir}/temp"/>
     <property name="classes.dir" value="${basedir}/classes"/>
 
     <!-- Check out dependent modules -->
@@ -18,7 +18,7 @@
 
     <target name="clean">
         <delete dir="${out.dir}"/>
-        <delete dir="${obj.dir}"/>
+        <delete dir="${temp.dir}"/>
         <delete dir="${classes.dir}"/>
     </target>
 
@@ -44,7 +44,9 @@
 
     <target name="make">
         <mkdir dir="${out.dir}"/>
-        <mkdir dir="${obj.dir}"/>        
+        <mkdir dir="${temp.dir}"/>
         <exec command="make -f resources/make/makefile"/>
+        <copydir src="resources/data" includes="*.trn" dest="${out.dir}"/>
+        <copydir src="resources/xml" includes="*.xml" dest="${out.dir}"/>
     </target>
 </project>
