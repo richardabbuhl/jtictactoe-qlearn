@@ -403,7 +403,7 @@ public class Teach extends Game {
               ntf_file = args[arg];
         }
 
-        if (ntf_file == null) return( false );
+        // if (ntf_file == null) return( false );
 
       } catch (Exception e) {
          return( false );
@@ -420,8 +420,8 @@ public class Teach extends Game {
    -------------------------------------------------------------*/
    void show_usage()
    {
-      System.out.println("QMAIN V1.0, Copyright 2002 Richard Abbuhl.");
-      System.out.println("usage:  qmain [-lmdhsrtanvxoefg0123] -p <pattern file> <NTF file>");
+      System.out.println("JQLEARN V1.0.1, Copyright 2005 Richard Abbuhl.");
+      System.out.println("usage:  jqlearn [-lmdhsrtanvxoefg0123]");
       System.out.println("   -l = specify hidden layer size (default 30).");
       System.out.println("   -m = use minimax (default).");
       System.out.println("   -d = use random.");
@@ -432,7 +432,6 @@ public class Teach extends Game {
       System.out.println("   -a = apply network.");
       System.out.println("   -n = number of simulations.");
       System.out.println("   -v = verbose parameter display.");
-      System.out.println("   -p = pattern file for training (required).");
       System.out.println("   -x = pattern file does not contain desired outputs.");
       System.out.println("   -o = specify alpha (default 0.1).");
       System.out.println("   -e = specify epsilon (default 0.0).");
