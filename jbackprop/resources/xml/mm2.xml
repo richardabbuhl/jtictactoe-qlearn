@@ -3,7 +3,7 @@
   version="1"
   activ_func="2"
   max_iterations="500000"
-  max_total_error="0.000010"
+  max_total_error="0.000100"
   output_type="1"
   iteration_print="1"
   save_weights="1"
