@@ -1,9 +1,11 @@
 // Copyright 2002, Richard Abbuhl
 
-import com.jmentor.tictactoe.Player;
-import com.jmentor.tictactoe.Random;
-import com.jmentor.tictactoe.Board;
-import com.jmentor.random.MersenneTwister;
+package com.jmentor.jqlearn;
+
+import com.jmentor.jtictactoe.Player;
+import com.jmentor.jtictactoe.Random;
+import com.jmentor.jtictactoe.Board;
+import com.jmentor.jrandom.MersenneTwister;
 
 import java.io.*;
 import java.text.DecimalFormat;

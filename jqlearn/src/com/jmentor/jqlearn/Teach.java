@@ -1,8 +1,10 @@
 // Copyright 2002, Richard Abbuhlv
 
-import com.jmentor.tictactoe.*;
-import com.jmentor.bputils.cputime;
-import com.jmentor.random.MersenneTwister;
+package com.jmentor.jqlearn;
+
+import com.jmentor.jtictactoe.*;
+import com.jmentor.jbackprop.cputime;
+import com.jmentor.jrandom.MersenneTwister;
 
 import java.text.DecimalFormat;
 

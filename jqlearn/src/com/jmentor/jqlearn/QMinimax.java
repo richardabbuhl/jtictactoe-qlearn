@@ -1,6 +1,8 @@
 // Copyright 2002, Richard Abbuhl
 
-import com.jmentor.tictactoe.Minimax;
+package com.jmentor.jqlearn;
+
+import com.jmentor.jtictactoe.Minimax;
 
 public class QMinimax extends Minimax {
 
