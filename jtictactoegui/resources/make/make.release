@@ -1,0 +1,23 @@
+#--------------------------------------------------------------
+#
+# This is the makefile for the building the source release.
+#
+#--------------------------------------------------------------
+
+EXES=tictactest.jar qweights cross.gif not.gif
+VERSION=1_0_0
+OUTFILE=tictactest$(VERSION).zip
+RELDIR=n:/rick-nt/homepage/tictactoe
+
+$(OUTFILE):
+	(cd ..; ant clean; ant make jar release)
+	(cd ../deploy; jar -Mcvf ../RELEASE/$(OUTFILE) $(EXES) -C .. readme.txt)
+
+jar:
+	(cd ../deploy; jar -Mcvf ../RELEASE/$(OUTFILE) $(EXES) -C .. readme.txt)
+
+clean:
+	rm -f $(OUTFILE)
+
+release:
+	cp $(OUTFILE) $(RELDIR)
