@@ -25,8 +25,8 @@
 
    <!-- Check out dependent modules -->
    <target name="prepare" unless="nocvs">
-      <cvs cvsRoot=":pserver:rabbuhl@fluffy:/usr/local/cvsroot" package="nanoxml" dest="modules"/>
-      <cvs cvsRoot=":pserver:rabbuhl@fluffy:/usr/local/cvsroot" package="random" dest="modules"/>       
+      <cvs cvsRoot=":pserver:rabbuhl@rabbuhl.demon.nl:/usr/local/cvsroot" package="nanoxml" dest="modules"/>
+      <cvs cvsRoot=":pserver:rabbuhl@rabbuhl.demon.nl:/usr/local/cvsroot" package="random" dest="modules"/>       
    </target>
 
    <!--Set the source path-->
