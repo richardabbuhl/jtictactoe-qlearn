@@ -7,6 +7,7 @@
     <property name="out.dir" value="${basedir}/out"/>
     <property name="temp.dir" value="${basedir}/temp"/>
     <property name="classes.dir" value="${basedir}/classes"/>
+    <property name="version" value="1_0_1"/>
 
     <!-- Check out dependent modules -->
     <target name="prepare.home" unless="nocvs">
@@ -38,6 +39,7 @@
         <copyfile src="resources/run/jbackprop.bat" dest="${out.dir}/jbackprop.bat"/>
         <copydir src="resources/data" includes="*.trn" dest="${out.dir}"/>
         <copydir src="resources/xml" includes="*.xml" dest="${out.dir}"/>
+        <copydir src="resources/doc" includes="readme.txt" dest="${out.dir}"/>        
     </target>
 
     <target name="all" depends="build" description="build all"/>
@@ -48,5 +50,14 @@
         <exec command="make -f resources/make/makefile"/>
         <copydir src="resources/data" includes="*.trn" dest="${out.dir}"/>
         <copydir src="resources/xml" includes="*.xml" dest="${out.dir}"/>
+        <copydir src="resources/doc" includes="readme.txt" dest="${out.dir}"/>
+    </target>
+
+    <target name="make.release" depends="clean, build, make">
+        <exec command="make -f resources/make/makefile"/>
+        <zip zipfile="${out.dir}/${ant.project.name}-${version}.zip" update="false">
+            <fileset dir="${out.dir}"
+                excludes="${ant.project.name}-${version}.zip"/>
+        </zip>
     </target>
 </project>
