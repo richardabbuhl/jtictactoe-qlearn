@@ -1,0 +1,27 @@
+#--------------------------------------------------------------
+#
+# This is the makefile for the building the source release.
+#
+#--------------------------------------------------------------
+
+DLLS=-C /usr/bin cygwin1.dll -C /usr/bin cygiconv-2.dll -C /usr/bin cygz.dll
+EXES=jmentor.jar jmentor.exe $(DLLS)
+#SRCS=*.java nanoxml/*.java makefile
+EXAM=mm*.* xor*.*
+VERSION=1_0_0
+OUTFILE=jmentor$(VERSION).zip
+RELDIR=n:/rick-nt/homepage/jmentor
+
+$(OUTFILE):
+	(cd ..; make clean; make)
+	(cd ..; ant clean; ant make jar)
+	(cd ..; jar -Mcvf RELEASE/$(OUTFILE) $(EXES) $(SRCS) $(EXAM) readme.txt)
+
+jar:
+	(cd ..; jar -Mcvf RELEASE/$(OUTFILE) $(EXES) $(SRCS) $(EXAM) readme.txt)
+
+clean:
+	rm -f $(OUTFILE)
+
+release:
+	cp $(OUTFILE) $(RELDIR)

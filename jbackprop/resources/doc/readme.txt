@@ -51,7 +51,7 @@ the xor problem are
 
 or 
 
-   java -jar jbackprop.jar -p xor.trn xor.xml
+   java -cp jbackprop.jar com.jmentor.jbackprop.mtrain -p xor.trn xor.xml
 
 ---------------------------------------------
 - XML File
