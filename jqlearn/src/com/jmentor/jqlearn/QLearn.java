@@ -147,6 +147,18 @@ public class QLearn extends Player {
       }
    }
 
+    private InputStream getResourceAsStream(String name) throws IOException {
+      InputStream result = getClass().getResourceAsStream(name);
+      if (result == null) {
+         result = getClass().getClassLoader().getResourceAsStream(name);
+         if (result == null) {
+            FileInputStream pfd = new FileInputStream(name);
+         }
+      }
+      return result;
+   }
+
+
    public void load(String pName)
    {
       try {
@@ -154,7 +166,7 @@ public class QLearn extends Player {
          /* Open the NTF file for writing */
          //FileInputStream pfd = new FileInputStream(pName);
          //DataInputStream file = new DataInputStream(pfd);
-         FileInputStream pfd = new FileInputStream(pName);
+         InputStream pfd = getResourceAsStream(pName);
          BufferedReader file = new BufferedReader(new InputStreamReader(pfd));
 
          for (int i = 0; i < nqvalues; i++) {

@@ -44,11 +44,10 @@
         <copydir src="resources/deploy" includes="qweights" dest="${classes.dir}/deploy"/>
         <jar jarfile="${out.dir}/jtictactoegui.jar" basedir="${classes.dir}">
             <manifest>
-                <attribute name="Main-Class" value="tictactest"/>
+                <attribute name="Main-Class" value="com.jmentor.jtictactoegui.tictactest"/>
             </manifest>
         </jar>
         <copydir src="resources/deploy" includes="*.gif" dest="${out.dir}/deploy"/>
-        <copydir src="resources/deploy" includes="qweights" dest="${out.dir}/deploy"/>
         <copydir src="resources/deploy" includes="tictactoegui.html" dest="${out.dir}"/>
         <copyfile src="resources/run/jtictactoegui.bat" dest="${out.dir}/jtictactoegui.bat"/>
     </target>
