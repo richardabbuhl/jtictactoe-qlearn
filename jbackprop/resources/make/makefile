@@ -10,7 +10,7 @@ nandir=modules/jnanoxml/src/com/jmentor/jnanoxml
 # --CLASSPATH=/usr/local/jdev9i/jdev/lib/jdev-rt.jar:/usr/local/jdev9i/lib/xmlparserv2.jar:/usr/local/jdev9i/lib/xmlcomp.jar 
 # ldir = /home/rabbuhl/mentor/jbackprop
 # CFLAGS = --CLASSPATH=lib/ant.jar:lib/collections.jar:lib/crimson.jar:lib/jaxp.jar:lib/jdom.jar:lib/xalan.jar:lib/xerces.jar
-CFLAGS = -O3 --CLASSPATH=.
+CFLAGS = -O3 --CLASSPATH=src:modules/jnanoxml/src
 
 #TOBJ = mtrain.o bpnetwork.o cputime.o networkrec.o network.o gnufix.o XMLElement.o XMLParseException.o
 TOBJ = mtrain.o bpnetwork.o cputime.o networkrec.o network.o XMLElement.o XMLParseException.o

@@ -10,11 +10,9 @@
     <!-- Check out dependent modules -->
     <target name="prepare.home" unless="nocvs">
         <cvs cvsRoot=":pserver:rabbuhl@fluffy:/usr/local/cvsroot" package="jnanoxml" dest="modules"/>
-        <cvs cvsRoot=":pserver:rabbuhl@fluffy:/usr/local/cvsroot" package="jrandom" dest="modules"/>
     </target>
     <target name="prepare.other" unless="nocvs">
         <cvs cvsRoot=":pserver:rabbuhl@rabbuhl.demon.nl:/usr/local/cvsroot" package="jnanoxml" dest="modules"/>
-        <cvs cvsRoot=":pserver:rabbuhl@rabbuhl.demon.nl:/usr/local/cvsroot" package="jrandom" dest="modules"/>
     </target>
 
     <target name="clean">
