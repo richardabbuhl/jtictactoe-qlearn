@@ -41,4 +41,9 @@
     </target>
 
     <target name="all" depends="build" description="build all"/>
+
+    <target name="make">
+        <mkdir dir="${out.dir}"/>
+        <exec command="make -f resources/make/makefile"/> 
+    </target>
 </project>
