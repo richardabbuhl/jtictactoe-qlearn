@@ -1,7 +1,7 @@
 /* XMLParseException.java
  *
  * $Revision: 1.1.1.1 $
- * $Date: 2003/08/24 12:15:23 $
+ * $Date: 2004/03/11 17:27:03 $
  * $Name:  $
  *
  * This file is part of NanoXML 2 Lite.
@@ -27,7 +27,7 @@
  *****************************************************************************/
 
 
-package com.jmentor.nanoxml;
+package com.jmentor.jnanoxml;
 
 
 /**
@@ -35,7 +35,7 @@ package com.jmentor.nanoxml;
  * string.
  * <P>
  * $Revision: 1.1.1.1 $<BR>
- * $Date: 2003/08/24 12:15:23 $<P>
+ * $Date: 2004/03/11 17:27:03 $<P>
  *
  * @see nanoxml.XMLElement
  *

@@ -19,11 +19,11 @@
 *
 --------------------------------------------------------*/
 
-package com.jmentor.backprop;
+package com.jmentor.jbackprop;
 
-import com.jmentor.backprop.networkrec;
-import com.jmentor.backprop.bpnetwork;
-import com.jmentor.backprop.cputime;
+import com.jmentor.jbackprop.networkrec;
+import com.jmentor.jbackprop.bpnetwork;
+import com.jmentor.jbackprop.cputime;
 
 /*--------------------------------------------------------
 *

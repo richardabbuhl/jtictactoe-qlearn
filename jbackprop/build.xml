@@ -9,8 +9,8 @@
 
     <!-- Check out dependent modules -->
     <target name="prepare" unless="nocvs">
-        <cvs cvsRoot=":pserver:rabbuhl@rabbuhl.demon.nl:/usr/local/cvsroot" package="nanoxml" dest="modules"/>
-        <cvs cvsRoot=":pserver:rabbuhl@rabbuhl.demon.nl:/usr/local/cvsroot" package="random" dest="modules"/>
+        <cvs cvsRoot=":pserver:rabbuhl@fluffy:/usr/local/cvsroot" package="jnanoxml" dest="modules"/>
+        <cvs cvsRoot=":pserver:rabbuhl@fluffy:/usr/local/cvsroot" package="jrandom" dest="modules"/>
     </target>
 
     <target name="clean">
@@ -21,7 +21,7 @@
     <target name="compile" depends="clean">
         <mkdir dir="${classes.dir}"/>
         <javac debug="off" destdir="${classes.dir}" srcdir="${src.dir}"
-            includes="src/**, modules/nanoxml/src/**, modules/random/src/**"/>
+            includes="src/**, modules/jnanoxml/src/**, modules/jrandom/src/**"/>
         <!--Copy files to output directory-->
         <!--copy file="xor.xml" tofile="classes/xor.xml"/-->
         <!--copy file="mm2.xml" tofile="classes/mm2.xml"/-->

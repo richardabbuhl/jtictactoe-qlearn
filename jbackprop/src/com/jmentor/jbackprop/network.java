@@ -15,14 +15,14 @@
 *
 -------------------------------------------------------------*/
 
-package com.jmentor.backprop;
+package com.jmentor.jbackprop;
 
 import java.util.*;
 import java.io.*;
 import java.net.*;
 import java.text.DecimalFormat;
-import com.jmentor.backprop.networkrec;
-import com.jmentor.nanoxml.*;
+import com.jmentor.jbackprop.networkrec;
+import com.jmentor.jnanoxml.*;
 
 public class network {
 

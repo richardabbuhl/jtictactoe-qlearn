@@ -48,7 +48,7 @@
 *
 -------------------------------------------------------------*/
 
-package com.jmentor.backprop;
+package com.jmentor.jbackprop;
 
 import java.text.DecimalFormat;
 

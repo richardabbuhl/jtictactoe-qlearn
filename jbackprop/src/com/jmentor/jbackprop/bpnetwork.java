@@ -76,12 +76,12 @@
 *
 --------------------------------------------------------*/
 
-package com.jmentor.backprop;
+package com.jmentor.jbackprop;
 
 import java.io.*;
 import java.text.DecimalFormat;
-import com.jmentor.backprop.network;
-import com.jmentor.backprop.networkrec;
+import com.jmentor.jbackprop.network;
+import com.jmentor.jbackprop.networkrec;
 
 public class bpnetwork extends network {
 

@@ -1,4 +1,4 @@
-package com.jmentor.random;
+package com.jmentor.jrandom;
 
 import java.io.*;
 import java.util.*;

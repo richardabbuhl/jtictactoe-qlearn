@@ -15,7 +15,7 @@
 *
 -------------------------------------------------------------*/
 
-package com.jmentor.backprop;
+package com.jmentor.jbackprop;
 
 /* Define a network record */
 public class networkrec {

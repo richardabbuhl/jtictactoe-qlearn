@@ -1,4 +1,4 @@
-package com.jmentor.random;
+package com.jmentor.jrandom;
 //package edu.cornell.lassp.houle.RngPack;
 
 //
