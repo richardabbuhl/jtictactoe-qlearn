@@ -36,7 +36,7 @@
                 <attribute name="Main-Class" value="com.jmentor.jbackprop.mtrain"/>
             </manifest>
         </jar>
-        <copyfile src="resources/run/jbackprop.bat" dest="${out.dir}/jbackprop.bat"/>
+        <copydir src="resources/run" includes="jbackprop.bat" dest="${out.dir}"/>
         <copydir src="resources/data" includes="*.trn" dest="${out.dir}"/>
         <copydir src="resources/xml" includes="*.xml" dest="${out.dir}"/>
         <copydir src="resources/doc" includes="readme.txt" dest="${out.dir}"/>        
@@ -51,6 +51,7 @@
         <copydir src="resources/data" includes="*.trn" dest="${out.dir}"/>
         <copydir src="resources/xml" includes="*.xml" dest="${out.dir}"/>
         <copydir src="resources/doc" includes="readme.txt" dest="${out.dir}"/>
+        <copydir src="/cygwin/bin" includes="cygwin1.dll" dest="${out.dir}"/>
     </target>
 
     <target name="make.release" depends="clean, build, make">
