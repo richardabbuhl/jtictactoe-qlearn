@@ -14,4 +14,4 @@ set JAVA=%JAVA_HOME%\bin\java
 
 :SKIP_JAVA_HOME
 
-%JAVA% -cp jtictactuegui.jar com.jmentor.jtictactoegui.tictactest %1 %2 %3 %4 %5 %6
+%JAVA% -cp jtictactoegui.jar com.jmentor.jtictactoegui.tictactest %1 %2 %3 %4 %5 %6

@@ -1,4 +1,4 @@
-package com.jmentor.tictactest;
+package com.jmentor.jtictactoegui;
 
 import javax.swing.SwingUtilities;
 

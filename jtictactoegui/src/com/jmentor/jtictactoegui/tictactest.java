@@ -1,22 +1,20 @@
-package com.jmentor.tictactest;
+package com.jmentor.jtictactoegui;
 
 import javax.swing.JApplet;
 import java.awt.*;
 import javax.swing.*;
 import javax.swing.JFrame;
-import javax.swing.UIManager;
 import javax.swing.JButton;
 import java.awt.Rectangle;
 import javax.swing.JLabel;
 import java.awt.event.*;
 import java.net.*; 
-import QLearn;
-import QMinimax;
-import com.jmentor.tictactoe.Random;
-import com.jmentor.tictactoe.Game;
-import com.jmentor.tictactoe.Board;
-import com.jmentor.tictactoe.Minimax;
-import SwingWorker.*;
+import com.jmentor.jqlearn.QLearn;
+import com.jmentor.jqlearn.QMinimax;
+import com.jmentor.jtictactoe.Random;
+import com.jmentor.jtictactoe.Game;
+import com.jmentor.jtictactoe.Board;
+import com.jmentor.jtictactoe.Minimax;
 
 public class tictactest extends JApplet
 {
