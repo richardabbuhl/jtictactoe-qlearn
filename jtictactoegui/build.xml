@@ -40,24 +40,18 @@
 
     <target name="build" depends="compile">
         <mkdir dir="${out.dir}"/>
-        <copydir src="resources/deploy" includes="*.gif" dest="${out.dir}"/>
+        <copydir src="resources/deploy" includes="*.gif" dest="${classes.dir}/deploy"/>
+        <copydir src="resources/deploy" includes="qweights" dest="${classes.dir}/deploy"/>
         <jar jarfile="${out.dir}/jtictactoegui.jar" basedir="${classes.dir}">
             <manifest>
                 <attribute name="Main-Class" value="tictactest"/>
             </manifest>
         </jar>
-        <copydir src="resources/deploy" includes="qweights" dest="${out.dir}"/>
-        <copydir src="resources/deploy" includes="tictactoegui.html" dest="${out.dir}"/>        
+        <copydir src="resources/deploy" includes="*.gif" dest="${out.dir}/deploy"/>
+        <copydir src="resources/deploy" includes="qweights" dest="${out.dir}/deploy"/>
+        <copydir src="resources/deploy" includes="tictactoegui.html" dest="${out.dir}"/>
         <copyfile src="resources/run/jtictactoegui.bat" dest="${out.dir}/jtictactoegui.bat"/>
     </target>
 
     <target name="all" depends="build" description="build all"/>
-
-    <target name="make">
-        <mkdir dir="${out.dir}"/>
-        <mkdir dir="${temp.dir}"/>
-        <exec command="make -f resources/make/makefile"/>
-        <copydir src="resources/data" includes="*.trn" dest="${out.dir}"/>
-        <copydir src="resources/xml" includes="*.xml" dest="${out.dir}"/>
-    </target>
 </project>

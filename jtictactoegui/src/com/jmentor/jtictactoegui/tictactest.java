@@ -109,13 +109,13 @@ public class tictactest extends JApplet
   
         // Here we load the image. 
         // Only Gif and JPG are allowed. Transparent gif also. 
-        xImage = getImage(base, "tictactest/deploy/cross.gif");
-        oImage = getImage(base, "tictactest/deploy/not.gif");
+        xImage = getImage(base, "deploy/cross.gif");
+        oImage = getImage(base, "deploy/not.gif");
 
      } else {
 
-        xImage = Toolkit.getDefaultToolkit().getImage("tictactest/deploy/cross.gif");
-        oImage = Toolkit.getDefaultToolkit().getImage("tictactest/deploy/not.gif");
+        xImage = Toolkit.getDefaultToolkit().getImage("deploy/cross.gif");
+        oImage = Toolkit.getDefaultToolkit().getImage("deploy/not.gif");
      }
   
      // tell the MediaTracker to keep an eye on this image, and give it ID 1; 
@@ -132,7 +132,7 @@ public class tictactest extends JApplet
     // Load the weights
     try
     {
-       qlearn.load("tictactest/deploy/qweights");
+       qlearn.load("deploy/qweights");
        weightsLoaded = true;
     } catch(Exception e)
     {
