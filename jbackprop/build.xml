@@ -24,15 +24,15 @@
 
     <target name="compile" depends="clean">
         <mkdir dir="${classes.dir}"/>
-        <javac debug="off" destdir="${classes.dir}" srcdir="${src.dir}"
-            includes="src/**, modules/jnanoxml/src/**, modules/jrandom/src/**"/>
+        <javac debug="on" destdir="${classes.dir}" srcdir="${src.dir}"
+            includes="src/**, modules/jnanoxml/src/**"/>
     </target>
 
     <target name="build" depends="compile">
         <mkdir dir="${out.dir}"/>
         <jar jarfile="${out.dir}/jbackprop.jar" basedir="${classes.dir}">
             <manifest>
-                <attribute name="Main-Class" value="mtrain"/>
+                <attribute name="Main-Class" value="com.jmentor.jbackprop.mtrain"/>
             </manifest>
         </jar>
         <copyfile src="resources/run/jbackprop.bat" dest="${out.dir}/jbackprop.bat"/>

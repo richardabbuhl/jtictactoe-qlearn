@@ -14,4 +14,4 @@ set JAVA=%JAVA_HOME%\bin\java
 
 :SKIP_JAVA_HOME
 
-%JAVA% -cp jbackprop.jar com.jmentor.jbackprop.mtrain %1 %2 %3 %4 %5 %6
+%JAVA% -jar jbackprop.jar %1 %2 %3 %4 %5 %6
