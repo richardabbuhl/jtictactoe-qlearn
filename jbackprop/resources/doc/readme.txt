@@ -130,7 +130,7 @@ OPTION - 2, Build jbackprop.jar
 ---------------------------------------------
 
 + Version 1.0.1:  February 9, 2005
-Updated release.  Renamed to JBackprop.
+Updated release.  Renamed release to JBackprop.
 
 + Version 1.0.0:  December 9, 2002
 First public Java version.
