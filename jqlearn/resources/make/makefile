@@ -20,8 +20,8 @@ NANOBJ = $(objdir)/XMLElement.o $(objdir)/XMLParseException.o
 RANOBJ = $(objdir)/RandomElement.o $(objdir)/RandomSeedable.o $(objdir)/Ranlux.o $(objdir)/MersenneTwister.o
 TTTOBJ = $(objdir)/Board.o $(objdir)/Game.o $(objdir)/Human.o $(objdir)/Minimax.o $(objdir)/Player.o $(objdir)/Random.o $(objdir)/Train.o
 GNUOBJ = $(objdir)/gnufix.o
-$(outdir)/qmain.exe:  $(SRCOBJ) $(BACKOBJ) $(NANOBJ) $(RANOBJ) $(TTTOBJ) $(GNUOBJ)
-	gcj $(CFLAGS) --main=com.jmentor.jqlearn.Teach -o $(outdir)/qmain.exe $(SRCOBJ) $(BACKOBJ) $(NANOBJ) $(RANOBJ) $(TTTOBJ) $(GNUOBJ) -lm
+$(outdir)/jqlearn.exe:  $(SRCOBJ) $(BACKOBJ) $(NANOBJ) $(RANOBJ) $(TTTOBJ) $(GNUOBJ)
+	gcj $(CFLAGS) --main=com.jmentor.jqlearn.Teach -o $(outdir)/jqlearn.exe $(SRCOBJ) $(BACKOBJ) $(NANOBJ) $(RANOBJ) $(TTTOBJ) $(GNUOBJ) -lm
 
 $(objdir)/QLearn.o:  $(srcdir)/QLearn.java
 	gcj -c $(CFLAGS) -o $@ $(srcdir)/QLearn.java
@@ -91,4 +91,4 @@ $(objdir)/gnufix.o:  $(gnudir)/gnufix.java
 	gcj -c $(CFLAGS) -o $@ $(gnudir)/gnufix.java
 
 clean:
-	rm -f $(outdir)/qmain.exe $(objdir)/*.o
+	rm -f $(outdir)/jqlearn.exe $(objdir)/*.o
