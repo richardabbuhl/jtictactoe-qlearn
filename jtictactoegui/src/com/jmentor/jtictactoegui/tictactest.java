@@ -8,7 +8,11 @@ import javax.swing.JButton;
 import java.awt.Rectangle;
 import javax.swing.JLabel;
 import java.awt.event.*;
-import java.net.*; 
+import java.net.*;
+import java.io.InputStream;
+import java.io.IOException;
+import java.io.FileInputStream;
+
 import com.jmentor.jqlearn.QLearn;
 import com.jmentor.jqlearn.QMinimax;
 import com.jmentor.jtictactoe.Random;
@@ -92,6 +96,34 @@ public class tictactest extends JApplet
      jInfo.setText("Weights loaded = " + weightsLoaded);
   }
 
+  private InputStream getResourceAsStream(String name) throws IOException {
+      InputStream result = getClass().getResourceAsStream(name);
+      if (result == null) {
+         result = getClass().getClassLoader().getResourceAsStream(name);
+         if (result == null) {
+            FileInputStream pfd = new FileInputStream(name);
+         }
+      }
+      return result;
+  }
+
+  private Image loadImage(String filename) {
+     Image image = null;
+     try {
+       InputStream in = getResourceAsStream(filename);
+       byte buffer[] = new byte[in.available()];
+       for (int i = 0, n = in.available(); i<n; i++)
+         buffer[i] = (byte)in.read();
+       // in.read(buffer);
+       // this doesn't read all when reading from JAR
+       Toolkit toolkit = Toolkit.getDefaultToolkit();
+       image = toolkit.createImage(buffer);
+     } catch (Exception e) {
+         System.out.println("Error " + e.toString());
+     }
+     return image;
+  }
+
   public void init()
   {
      // initialize the MediaTracker 
@@ -114,8 +146,8 @@ public class tictactest extends JApplet
 
      } else {
 
-        xImage = Toolkit.getDefaultToolkit().getImage("deploy/cross.gif");
-        oImage = Toolkit.getDefaultToolkit().getImage("deploy/not.gif");
+        xImage = loadImage("deploy/cross.gif");
+        oImage = loadImage("deploy/not.gif");
      }
   
      // tell the MediaTracker to keep an eye on this image, and give it ID 1; 
