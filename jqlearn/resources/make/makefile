@@ -4,72 +4,91 @@
 #
 #--------------------------------------------------------------
 
-tdir  = ../ttt
-udir  = ../bputils
-idir  = ../random
-CFLAGS = -O3 --CLASSPATH=.:$(tdir):$(udir):$(idir)
+CFLAGS = -O3 --CLASSPATH=src:modules/jbackprop/src:modules/jnanoxml/src:modules/jrandom/src:modules/jtictactoe/src
+srcdir=src/com/jmentor/jqlearn
+backdir=modules/jbackprop/src/com/jmentor/jbackprop
+nandir=modules/jnanoxml/src/com/jmentor/jnanoxml
+randir=modules/jrandom/src/com/jmentor/jrandom
+tttdir=modules/jtictactoe/src/com/jmentor/jtictactoe
+gnudir=resources/make
+objdir=temp
+outdir=out
 
-all: qmain.exe
+SRCOBJ = $(objdir)/QLearn.o $(objdir)/QMinimax.o $(objdir)/Teach.o
+BACKOBJ = $(objdir)/bpnetwork.o $(objdir)/cputime.o $(objdir)/networkrec.o $(objdir)/network.o
+NANOBJ = $(objdir)/XMLElement.o $(objdir)/XMLParseException.o
+RANOBJ = $(objdir)/RandomElement.o $(objdir)/RandomSeedable.o $(objdir)/Ranlux.o $(objdir)/MersenneTwister.o
+TTTOBJ = $(objdir)/Board.o $(objdir)/Game.o $(objdir)/Human.o $(objdir)/Minimax.o $(objdir)/Player.o $(objdir)/Random.o $(objdir)/Train.o
+GNUOBJ = $(objdir)/gnufix.o
+$(outdir)/qmain.exe:  $(SRCOBJ) $(BACKOBJ) $(NANOBJ) $(RANOBJ) $(TTTOBJ) $(GNUOBJ)
+	gcj $(CFLAGS) --main=com.jmentor.jqlearn.Teach -o $(outdir)/qmain.exe $(SRCOBJ) $(BACKOBJ) $(NANOBJ) $(RANOBJ) $(TTTOBJ) $(GNUOBJ) -lm
 
-TOBJ = Board.o Teach.o QLearn.o QMinimax.o Player.o Human.o Minimax.o Train.o Random.o Game.o 
-#UTIL = cputime.o RandomElement.o RandomSeedable.o Ranlux.o MersenneTwister.o
-UTIL = cputime.o MersenneTwister.o
-qmain.exe:  $(TOBJ) $(UTIL)
-	gcj $(CFLAGS) --main=Teach -o qmain.exe $(TOBJ) $(UTIL) -lm 
+$(objdir)/QLearn.o:  $(srcdir)/QLearn.java
+	gcj -c $(CFLAGS) -o $@ $(srcdir)/QLearn.java
 
-clean: 
-	rm -f qmain.exe *.o
+$(objdir)/QMinimax.o:  $(srcdir)/QMinimax.java
+	gcj -c $(CFLAGS) -o $@ $(srcdir)/QMinimax.java
 
-Teach.o:  Teach.java
-	gcj -c $(CFLAGS) Teach.java 
+$(objdir)/Teach.o:  $(srcdir)/Teach.java
+	gcj -c $(CFLAGS) -o $@ $(srcdir)/Teach.java
 
-QLearn.o:  QLearn.java
-	gcj -c $(CFLAGS) QLearn.java 
 
-QMinimax.o:  QMinimax.java
-	gcj -c $(CFLAGS) QMinimax.java 
+$(objdir)/bpnetwork.o:  $(backdir)/bpnetwork.java
+	gcj -c $(CFLAGS) -o $@ $(backdir)/bpnetwork.java
 
-Board.o:  $(tdir)/Board.java
-	gcj -c $(CFLAGS) $(tdir)/Board.java 
+$(objdir)/cputime.o:  $(backdir)/cputime.java
+	gcj -c $(CFLAGS) -o $@ $(backdir)/cputime.java
 
-Player.o:  $(tdir)/Player.java
-	gcj -c $(CFLAGS) $(tdir)/Player.java 
+$(objdir)/networkrec.o:  $(backdir)/networkrec.java
+	gcj -c $(CFLAGS) -o $@ $(backdir)/networkrec.java
 
-Minimax.o:  $(tdir)/Minimax.java
-	gcj -c $(CFLAGS) $(tdir)/Minimax.java 
+$(objdir)/network.o:  $(backdir)/network.java
+	gcj -c $(CFLAGS) -o $@ $(backdir)/network.java
 
-Random.o:  $(tdir)/Random.java
-	gcj -c $(CFLAGS) $(tdir)/Random.java 
 
-Human.o:  $(tdir)/Human.java
-	gcj -c $(CFLAGS) $(tdir)/Human.java 
+$(objdir)/XMLElement.o:  $(nandir)/XMLElement.java
+	gcj -c $(CFLAGS) -o $@ $(nandir)/XMLElement.java
 
-Game.o:  $(tdir)/Game.java
-	gcj -c $(CFLAGS) $(tdir)/Game.java 
+$(objdir)/XMLParseException.o:  $(nandir)/XMLParseException.java
+	gcj -c $(CFLAGS) -o $@ $(nandir)/XMLParseException.java
 
-Train.o:  $(tdir)/Train.java
-	gcj -c $(CFLAGS) $(tdir)/Train.java 
 
-bp.o:  $(bpdir)/bp.java
-	gcj -c $(CFLAGS) $(bpdir)/bp.java 
+$(objdir)/RandomElement.o:  $(randir)/RandomElement.java
+	gcj -c $(CFLAGS) -o $@ $(randir)/RandomElement.java
 
-myalloc.o:  $(bpdir)/myalloc.java
-	gcj -c $(CFLAGS) $(bpdir)/myalloc.java 
+$(objdir)/RandomSeedable.o:  $(randir)/RandomSeedable.java
+	gcj -c $(CFLAGS) -o $@ $(randir)/RandomSeedable.java
 
-cputime.o:  $(udir)/cputime.java
-	gcj -c $(CFLAGS) $(udir)/cputime.java 
+$(objdir)/Ranlux.o:  $(randir)/Ranlux.java
+	gcj -c $(CFLAGS) -o $@ $(randir)/Ranlux.java
 
-mutils.o:  $(udir)/mutils.java
-	gcj -c $(CFLAGS) $(udir)/mutils.java 
+$(objdir)/MersenneTwister.o:  $(randir)/MersenneTwister.java
+	gcj -c $(CFLAGS) -o $@ $(randir)/MersenneTwister.java
 
-RandomElement.o:  $(idir)/RandomElement.java
-	gcj -c $(CFLAGS) $(idir)/RandomElement.java
 
-RandomSeedable.o:  $(idir)/RandomSeedable.java
-	gcj -c $(CFLAGS) $(idir)/RandomSeedable.java
+$(objdir)/Board.o:  $(tttdir)/Board.java
+	gcj -c $(CFLAGS) -o $@ $(tttdir)/Board.java
 
-Ranlux.o:  $(idir)/Ranlux.java
-	gcj -c $(CFLAGS) $(idir)/Ranlux.java
+$(objdir)/Game.o:  $(tttdir)/Game.java
+	gcj -c $(CFLAGS) -o $@ $(tttdir)/Game.java
 
-MersenneTwister.o:  $(idir)/MersenneTwister.java
-	gcj -c $(CFLAGS) $(idir)/MersenneTwister.java
+$(objdir)/Human.o:  $(tttdir)/Human.java
+	gcj -c $(CFLAGS) -o $@ $(tttdir)/Human.java
+
+$(objdir)/Minimax.o:  $(tttdir)/Minimax.java
+	gcj -c $(CFLAGS) -o $@ $(tttdir)/Minimax.java
+
+$(objdir)/Player.o:  $(tttdir)/Player.java
+	gcj -c $(CFLAGS) -o $@ $(tttdir)/Player.java
+
+$(objdir)/Random.o:  $(tttdir)/Random.java
+	gcj -c $(CFLAGS) -o $@ $(tttdir)/Random.java
+
+$(objdir)/Train.o:  $(tttdir)/Train.java
+	gcj -c $(CFLAGS) -o $@ $(tttdir)/Train.java
+
+$(objdir)/gnufix.o:  $(gnudir)/gnufix.java
+	gcj -c $(CFLAGS) -o $@ $(gnudir)/gnufix.java
+
+clean:
+	rm -f $(outdir)/qmain.exe $(objdir)/*.o

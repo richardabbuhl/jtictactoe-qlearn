@@ -54,7 +54,6 @@
         <mkdir dir="${out.dir}"/>
         <mkdir dir="${temp.dir}"/>
         <exec command="make -f resources/make/makefile"/>
-        <copydir src="resources/data" includes="*.trn" dest="${out.dir}"/>
-        <copydir src="resources/xml" includes="*.xml" dest="${out.dir}"/>
+        <copydir src="resources/run" includes="*.sh" dest="${out.dir}"/>
     </target>
 </project>
