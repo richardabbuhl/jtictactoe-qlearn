@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<project name="backprop" default="all" basedir=".">
+<project name="jbackprop" default="all" basedir=".">
 
     <taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
     <property environment="env"/>
@@ -34,12 +34,12 @@
 
     <target name="build" depends="compile">
         <mkdir dir="${out.dir}"/>
-        <jar jarfile="${out.dir}/jmentor.jar" basedir="${classes.dir}">
+        <jar jarfile="${out.dir}/jbackprop.jar" basedir="${classes.dir}">
             <manifest>
                 <attribute name="Main-Class" value="mtrain"/>
             </manifest>
         </jar>
-        <copyfile src="resources/run/backprop.bat" dest="${out.dir}/backprop.bat"/>  
+        <copyfile src="resources/run/jbackprop.bat" dest="${out.dir}/jbackprop.bat"/>
     </target>
 
     <target name="all" depends="build" description="build all"/>
