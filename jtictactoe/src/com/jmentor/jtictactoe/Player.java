@@ -1,6 +1,6 @@
 // Copyright 2002, Richard Abbuhl
 
-package com.jmentor.tictactoe;
+package com.jmentor.jtictactoe;
 
 public class Player {
 

@@ -1,4 +1,4 @@
-package com.jmentor.tictactoe;
+package com.jmentor.jtictactoe;
 
 import java.text.DecimalFormat;
 

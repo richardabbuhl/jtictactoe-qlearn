@@ -1,8 +1,8 @@
 // Copyright 2002, Richard Abbuhl
 
-package com.jmentor.tictactoe;
+package com.jmentor.jtictactoe;
 
-import com.jmentor.random.MersenneTwister;
+import com.jmentor.jrandom.MersenneTwister;
 
 public class Random extends Player {
 

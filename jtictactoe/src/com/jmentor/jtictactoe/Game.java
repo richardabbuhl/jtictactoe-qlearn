@@ -1,9 +1,8 @@
 // Copyright 2002, Richard Abbuhl
 
-package com.jmentor.tictactoe;
+package com.jmentor.jtictactoe;
 
 import java.text.DecimalFormat;
-import com.jmentor.tictactoe.*;
 
 public class Game {
 
