@@ -39,6 +39,7 @@
                 <attribute name="Main-Class" value="mtrain"/>
             </manifest>
         </jar>
+        <copyfile src="resources/run/backprop.bat" dest="${basedir}/backprop.bat"/>  
     </target>
 
     <target name="all" depends="build" description="build all"/>
