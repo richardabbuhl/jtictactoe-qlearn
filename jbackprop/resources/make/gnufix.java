@@ -8,13 +8,6 @@
 *
 --------------------------------------------------------*/
 
-import java.util.*;
-import java.io.*;
-import java.net.*;
-import java.text.DecimalFormat;
-import networkrec;
-import nanoxml.*;
-
 public class gnufix {
 
    /* Workaround for runtime error on cygwin */
