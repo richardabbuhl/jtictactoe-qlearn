@@ -82,12 +82,10 @@
     <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
   </component>
   <component name="CvsTabbedWindow">
-    <UpdateInfo EnvName="UPDATE_FILES_OR_DIRECTORY" date="2/10/05 3:20 PM">
+    <UpdateInfo EnvName="UPDATE_FILES_OR_DIRECTORY" date="2/11/05 7:48 AM">
       <FileInformation>
         <MODIFIED>
-          <PATH>D:\vocodev\jtictactoegui\build.xml</PATH>
-          <PATH>D:\vocodev\jtictactoegui\jtictactoegui.iws</PATH>
-          <PATH>D:\vocodev\jtictactoegui\src\com\jmentor\jtictactoegui\tictactest.java</PATH>
+          <PATH>C:\RAbbuhl_Data\jtictactoegui\jtictactoegui.iws</PATH>
         </MODIFIED>
         <MERGED_WITH_CONFLICTS />
         <MERGED />
@@ -135,7 +133,15 @@
     <option name="HIDE_WARNINGS" value="false" />
   </component>
   <component name="FileEditorManager" split-orientation="vertical" split-proportion="0.5">
-    <first-group />
+    <first-group selected-file="file://$PROJECT_DIR$/build.xml">
+      <entry file="file://$PROJECT_DIR$/build.xml" pinned="false">
+        <provider selected="true" editor-type-id="text-editor">
+          <state line="50" column="68" selection-start="2763" selection-end="2767" vertical-scroll-proportion="0.9750958">
+            <folding />
+          </state>
+        </provider>
+      </entry>
+    </first-group>
     <second-group />
   </component>
   <component name="HierarchyBrowserManager">
@@ -151,10 +157,10 @@
   <component name="J2EEProjectPane" />
   <component name="NamedScopeManager" />
   <component name="PackagesPane">
-    <expanded_node url="" module="jtictactoegui" type="module" />
-    <expanded_node url="com" module="jtictactoegui" type="package" />
     <expanded_node url="com.jmentor.jtictactoegui" module="jtictactoegui" type="package" />
     <expanded_node url="com.jmentor" module="jtictactoegui" type="package" />
+    <expanded_node url="com" module="jtictactoegui" type="package" />
+    <expanded_node url="" module="jtictactoegui" type="module" />
   </component>
   <component name="ProjectPane">
     <expanded_node url="file://$PROJECT_DIR$" module="jtictactoegui" type="directory" />
@@ -192,20 +198,6 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
     </configuration>
-    <configuration selected="false" default="true" type="JUnit" factoryName="JUnit">
-      <module name="" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-    </configuration>
     <configuration selected="false" default="true" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
@@ -219,6 +211,20 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+    </configuration>
+    <configuration selected="false" default="true" type="JUnit" factoryName="JUnit">
+      <module name="" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
     </configuration>
   </component>
   <component name="SelectInManager" />
@@ -267,18 +273,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="994" extended-state="0" />
+    <frame x="-4" y="-4" width="1288" height="1002" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="CVS" active="true" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.3290993" order="8" />
+      <window_info id="CVS" active="true" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.32951945" order="8" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="7" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.16856678" order="0" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.15291262" order="0" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.32951945" order="1" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="1" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.3290993" order="8" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.32951945" order="8" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.4" order="6" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="8" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="1" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.25" order="1" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="2" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="2" />
       <window_info id="CVS File View" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="3" />
@@ -366,13 +372,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/deploy/tictactoegui.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="902" selection-end="902" vertical-scroll-proportion="0.41615668">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/jmentor/jtictactoegui/tictactest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="112" column="0" selection-start="3006" selection-end="3006" vertical-scroll-proportion="0.61893207">
@@ -387,9 +386,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/out/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/doc/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="13" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.5300481">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="2654" selection-end="2654" vertical-scroll-proportion="0.77305824">
+        <state line="50" column="68" selection-start="2763" selection-end="2767" vertical-scroll-proportion="0.9750958">
           <folding />
         </state>
       </provider>
