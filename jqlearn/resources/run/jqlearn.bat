@@ -14,4 +14,4 @@ set JAVA=%JAVA_HOME%\bin\java
 
 :SKIP_JAVA_HOME
 
-%JAVA% -cp jqlearn.jar com.jmentor.jqlearn.Teach %1 %2 %3 %4 %5 %6
+%JAVA% -jar jqlearn.jar %1 %2 %3 %4 %5 %6

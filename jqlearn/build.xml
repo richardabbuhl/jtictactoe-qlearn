@@ -38,7 +38,7 @@
         <mkdir dir="${out.dir}"/>
         <jar jarfile="${out.dir}/jqlearn.jar" basedir="${classes.dir}">
             <manifest>
-                <attribute name="Main-Class" value="mtrain"/>
+                <attribute name="Main-Class" value="com.jmentor.jqlearn.Teach"/>
             </manifest>
         </jar>
         <copyfile src="resources/run/jqlearn.bat" dest="${out.dir}/jqlearn.bat"/>
