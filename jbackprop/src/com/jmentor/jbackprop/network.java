@@ -17,9 +17,7 @@
 
 package com.jmentor.jbackprop;
 
-import java.util.*;
 import java.io.*;
-import java.net.*;
 import java.text.DecimalFormat;
 import com.jmentor.jbackprop.networkrec;
 import com.jmentor.jnanoxml.*;

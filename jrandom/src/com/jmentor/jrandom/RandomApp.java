@@ -1,6 +1,5 @@
 package com.jmentor.jrandom;
 //package edu.cornell.lassp.houle.RngPack;
-import java.util.*;
 
 //
 // RngPack 1.0 by Paul Houle

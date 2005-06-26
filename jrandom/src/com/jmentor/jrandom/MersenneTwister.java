@@ -1,7 +1,6 @@
 package com.jmentor.jrandom;
 
 import java.io.*;
-import java.util.*;
 
 /** 
  * Mersenne Twister and MersenneTwisterFast:

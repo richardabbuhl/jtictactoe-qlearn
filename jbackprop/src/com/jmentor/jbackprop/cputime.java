@@ -66,7 +66,7 @@ public class cputime {
    *           call to cputim.
    *
    -------------------------------------------------------------*/
-   public double cputime()
+   public double getCPUTime()
    {
       double ret;
 
@@ -84,7 +84,7 @@ public class cputime {
    -------------------------------------------------------------*/
    public void BeginTimer()
    {
-      cputime();
+      getCPUTime();
    }
 
    /*-----------------------------------------------------------
@@ -97,7 +97,7 @@ public class cputime {
    public double EndTimer()
    {
       //return((double) cputime() / (double) CLOCK_TICKS_PER_SECOND);
-      return(cputime());
+      return(getCPUTime());
    }
 
    /*-----------------------------------------------------------
@@ -109,7 +109,7 @@ public class cputime {
    -------------------------------------------------------------*/
    public double uEndTimer()
    {
-      return((double) cputime() * (1.0e6 / (double) CLOCK_TICKS_PER_SECOND));
+      return((double) getCPUTime() * (1.0e6 / (double) CLOCK_TICKS_PER_SECOND));
    }
 
    /*-----------------------------------------------------------
