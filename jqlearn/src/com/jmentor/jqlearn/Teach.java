@@ -295,15 +295,15 @@ public class Teach extends Game {
                Play( qlearn, qlearn );
             } else if (USE_MINIMAX) {
                if (NETWORK_GOES_FIRST) {
-                  Play( qlearn, minimax );
+                  Play( qminimax, minimax );
                } else {
-                  Play( minimax, qlearn );
+                  Play( minimax, qminimax );
                }
             } else {
                if (NETWORK_GOES_FIRST) {
-                  Play( qlearn, random );
+                  Play( qminimax, random );
                } else {
-                  Play( random, qlearn );
+                  Play( random, qminimax );
                }
             }
             //pollchar = ttypoll();
