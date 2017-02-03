@@ -41,7 +41,7 @@
                 <attribute name="Main-Class" value="com.jmentor.jqlearn.Teach"/>
             </manifest>
         </jar>
-        <copyfile src="resources/run/jqlearn.bat" dest="${out.dir}/jqlearn.bat"/>
+        <copyfile src="src/main/resources/run/jqlearn.bat" dest="${out.dir}/jqlearn.bat"/>
         <!--
         <copydir src="resources/data" includes="*.trn" dest="${out.dir}"/>
         <copydir src="resources/xml" includes="*.xml" dest="${out.dir}"/>
@@ -54,6 +54,6 @@
         <mkdir dir="${out.dir}"/>
         <mkdir dir="${temp.dir}"/>
         <exec command="make -f resources/make/makefile"/>
-        <copydir src="resources/run" includes="*.sh" dest="${out.dir}"/>
+        <copydir src="src/main/resources/run" includes="*.sh" dest="${out.dir}"/>
     </target>
 </project>

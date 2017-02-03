@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module version="4" relativePaths="true" type="JAVA_MODULE">
-  <component name="ModuleRootManager" />
-  <component name="NewModuleRootManager">
-    <output url="file://$MODULE_DIR$/classes" />
-    <exclude-output />
-    <exclude-exploded />
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/modules/jbackprop/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/modules/jnanoxml/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/modules/jqlearn/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/modules/jrandom/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/modules/jtictactoe/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntryProperties />
+    <orderEntry type="module" module-name="jrandom" />
+    <orderEntry type="module" module-name="jbackprop" />
+    <orderEntry type="module" module-name="jnanoxml" />
+    <orderEntry type="module" module-name="jtictactoe" />
+    <orderEntry type="module" module-name="jqlearn" />
   </component>
 </module>
-

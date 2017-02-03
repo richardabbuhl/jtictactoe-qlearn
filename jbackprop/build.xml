@@ -36,10 +36,10 @@
                 <attribute name="Main-Class" value="com.jmentor.jbackprop.mtrain"/>
             </manifest>
         </jar>
-        <copydir src="resources/run" includes="jbackprop.bat" dest="${out.dir}"/>
-        <copydir src="resources/data" includes="*.trn" dest="${out.dir}"/>
-        <copydir src="resources/xml" includes="*.xml" dest="${out.dir}"/>
-        <copydir src="resources/doc" includes="readme.txt" dest="${out.dir}"/>        
+        <copydir src="src/main/resources/run" includes="jbackprop.bat" dest="${out.dir}"/>
+        <copydir src="src/main/resources/data" includes="*.trn" dest="${out.dir}"/>
+        <copydir src="src/main/resources/xml" includes="*.xml" dest="${out.dir}"/>
+        <copydir src="src/main/resources/doc" includes="readme.txt" dest="${out.dir}"/>
     </target>
 
     <target name="all" depends="build" description="build all"/>
@@ -48,9 +48,9 @@
         <mkdir dir="${out.dir}"/>
         <mkdir dir="${temp.dir}"/>
         <exec command="make -f resources/make/makefile"/>
-        <copydir src="resources/data" includes="*.trn" dest="${out.dir}"/>
-        <copydir src="resources/xml" includes="*.xml" dest="${out.dir}"/>
-        <copydir src="resources/doc" includes="readme.txt" dest="${out.dir}"/>
+        <copydir src="src/main/resources/data" includes="*.trn" dest="${out.dir}"/>
+        <copydir src="src/main/resources/xml" includes="*.xml" dest="${out.dir}"/>
+        <copydir src="src/main/resources/doc" includes="readme.txt" dest="${out.dir}"/>
         <copydir src="/cygwin/bin" includes="cygwin1.dll" dest="${out.dir}"/>
     </target>
 

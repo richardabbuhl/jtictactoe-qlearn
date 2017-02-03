@@ -41,21 +41,21 @@
 
     <target name="build" depends="compile">
         <mkdir dir="${out.dir}"/>
-        <copydir src="resources/deploy" includes="*.gif" dest="${classes.dir}/deploy"/>
-        <copydir src="resources/deploy" includes="qweights" dest="${classes.dir}/deploy"/>
+        <copydir src="src/main/resources/deploy" includes="*.gif" dest="${classes.dir}/deploy"/>
+        <copydir src="src/main/resources/deploy" includes="qweights" dest="${classes.dir}/deploy"/>
         <jar jarfile="${out.dir}/jtictactoegui.jar" basedir="${classes.dir}">
             <manifest>
                 <attribute name="Main-Class" value="com.jmentor.jtictactoegui.tictactest"/>
             </manifest>
         </jar>
-        <copydir src="resources/deploy" includes="jtictactoegui.html" dest="${out.dir}"/>
-        <copyfile src="resources/run/jtictactoegui.bat" dest="${out.dir}/jtictactoegui.bat"/>
+        <copydir src="src/main/resources/deploy" includes="jtictactoegui.html" dest="${out.dir}"/>
+        <copyfile src="src/main/resources/run/jtictactoegui.bat" dest="${out.dir}/jtictactoegui.bat"/>
     </target>
 
     <target name="all" depends="build" description="build all"/>
 
     <target name="make.release" depends="clean, build">
-        <copyfile src="resources/doc/readme.txt" dest="${out.dir}/readme.txt"/>
+        <copyfile src="src/main/resources/doc/readme.txt" dest="${out.dir}/readme.txt"/>
         <zip zipfile="${out.dir}/${ant.project.name}-${version}.zip" update="false">
             <fileset dir="${out.dir}"
                 excludes="${ant.project.name}-${version}.zip"/>
