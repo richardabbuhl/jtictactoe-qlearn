@@ -478,9 +478,9 @@ public class XMLElement
         this.children = new Vector();
         this.entities = entities;
         this.lineNr = 0;
-        Enumeration enum = this.entities.keys();
-        while (enum.hasMoreElements()) {
-            Object key = enum.nextElement();
+        Enumeration e = this.entities.keys();
+        while (e.hasMoreElements()) {
+            Object key = e.nextElement();
             Object value = this.entities.get(key);
             if (value instanceof String) {
                 value = ((String) value).toCharArray();
@@ -2164,10 +2164,10 @@ public class XMLElement
         writer.write('<');
         writer.write(this.name);
         if (! this.attributes.isEmpty()) {
-            Enumeration enum = this.attributes.keys();
-            while (enum.hasMoreElements()) {
+            Enumeration e = this.attributes.keys();
+            while (e.hasMoreElements()) {
                 writer.write(' ');
-                String key = (String) enum.nextElement();
+                String key = (String) e.nextElement();
                 String value = (String) this.attributes.get(key);
                 writer.write(key);
                 writer.write('='); writer.write('"');
@@ -2185,9 +2185,9 @@ public class XMLElement
             writer.write('/'); writer.write('>');
         } else {
             writer.write('>');
-            Enumeration enum = this.enumerateChildren();
-            while (enum.hasMoreElements()) {
-                XMLElement child = (XMLElement) enum.nextElement();
+            Enumeration e = this.enumerateChildren();
+            while (e.hasMoreElements()) {
+                XMLElement child = (XMLElement) e.nextElement();
                 child.write(writer);
             }
             writer.write('<'); writer.write('/');
