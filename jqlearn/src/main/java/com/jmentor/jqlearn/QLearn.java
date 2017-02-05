@@ -152,7 +152,7 @@ public class QLearn extends Player {
       if (result == null) {
          result = getClass().getClassLoader().getResourceAsStream(name);
          if (result == null) {
-            FileInputStream pfd = new FileInputStream(name);
+            result = new FileInputStream(name);
          }
       }
       return result;
