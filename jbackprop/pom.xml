@@ -63,16 +63,12 @@
                                         <include>**</include>
                                     </includes>
                                 </resource>
-                            </resources>
-                            <resources>
                                 <resource>
                                     <directory>${basedir}/src/main/resources/xml</directory>
                                     <includes>
                                         <include>**</include>
                                     </includes>
                                 </resource>
-                            </resources>
-                            <resources>
                                 <resource>
                                     <directory>${basedir}/src/main/resources/run</directory>
                                     <includes>

@@ -14,4 +14,4 @@ set JAVA=%JAVA_HOME%\bin\java
 
 :SKIP_JAVA_HOME
 
-%JAVA% -jar jbackprop.jar %1 %2 %3 %4 %5 %6
+%JAVA% -jar ..\target\jbackprop-1.0.0-SNAPSHOT-jar-with-dependencies.jar %1 %2 %3 %4 %5 %6

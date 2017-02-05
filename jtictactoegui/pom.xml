@@ -74,8 +74,6 @@
                                         <include>**</include>
                                     </includes>
                                 </resource>
-                            </resources>
-                            <resources>
                                 <resource>
                                     <directory>${basedir}/src/main/resources/run</directory>
                                     <includes>
