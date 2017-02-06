@@ -11,8 +11,8 @@
     <name>JMentor Parent Project</name>
 
     <modules>
-        <module>jbackprop</module>
         <module>jnanoxml</module>
+        <module>jbackprop</module>
         <module>jqlearn</module>
         <module>jrandom</module>
         <module>jtictactoe</module>
