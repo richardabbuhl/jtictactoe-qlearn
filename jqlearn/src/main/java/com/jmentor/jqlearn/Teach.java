@@ -2,6 +2,7 @@
 
 package com.jmentor.jqlearn;
 
+import com.jmentor.jbackprop.decimalhelper;
 import com.jmentor.jtictactoe.*;
 import com.jmentor.jbackprop.cputime;
 import com.jmentor.jrandom.MersenneTwister;
@@ -43,8 +44,8 @@ public class Teach extends Game {
 
    Train train;
 
-   static DecimalFormat decfmt1  = new DecimalFormat("#00.00000");   
-   static DecimalFormat decfmt2  = new DecimalFormat("#00.00");   
+   static DecimalFormat decfmt1  = decimalhelper.defaultDecimalFormat("#00.00000");
+   static DecimalFormat decfmt2  = decimalhelper.defaultDecimalFormat("#00.00");
 
    Teach()
    {

@@ -80,12 +80,10 @@ package com.jmentor.jbackprop;
 
 import java.io.*;
 import java.text.DecimalFormat;
-import com.jmentor.jbackprop.network;
-import com.jmentor.jbackprop.networkrec;
 
 public class bpnetwork extends network {
 
-   static DecimalFormat decfmt = new DecimalFormat("#0.0000000");
+   static DecimalFormat decfmt = decimalhelper.defaultDecimalFormat("#0.0000000");
 
    /*********************************************************
    *                                                        *

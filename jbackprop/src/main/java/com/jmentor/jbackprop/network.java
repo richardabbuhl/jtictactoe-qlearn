@@ -25,8 +25,8 @@ import com.jmentor.jnanoxml.*;
 public class network {
 
    /* Misc defines for printing */
-   static DecimalFormat intfmt = new DecimalFormat("00");
-   static DecimalFormat decfmt = new DecimalFormat("#0.0000000");
+   static DecimalFormat intfmt = decimalhelper.defaultDecimalFormat("00");
+   static DecimalFormat decfmt = decimalhelper.defaultDecimalFormat("#0.0000000");
 
    int rec_terminate = networkrec.FALSE;
    int VERBOSE = networkrec.FALSE;

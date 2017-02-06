@@ -2,6 +2,8 @@
 
 package com.jmentor.jtictactoe;
 
+import com.jmentor.jbackprop.decimalhelper;
+
 import java.text.DecimalFormat;
 
 public class Train extends Player {
@@ -15,10 +17,10 @@ public class Train extends Player {
    static double BLOCKS     = 0.3;
    static double SCOREWIN   = 2.0;
 
-   static DecimalFormat intfmt = new DecimalFormat("0");
-   static DecimalFormat decfmt1 = new DecimalFormat("#0.0");
-   static DecimalFormat decfmt2 = new DecimalFormat("#00.0");
-   static DecimalFormat decfmt3 = new DecimalFormat("#00.000");
+   static DecimalFormat intfmt = decimalhelper.defaultDecimalFormat("0");
+   static DecimalFormat decfmt1 = decimalhelper.defaultDecimalFormat("#0.0");
+   static DecimalFormat decfmt2 = decimalhelper.defaultDecimalFormat("#00.0");
+   static DecimalFormat decfmt3 = decimalhelper.defaultDecimalFormat("#00.000");
 
    public Train()
    {

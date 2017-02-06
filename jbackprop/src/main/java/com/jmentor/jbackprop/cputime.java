@@ -57,8 +57,8 @@ public class cputime {
    static double CLOCK_TICKS_PER_SECOND = 1e-3;
    static double tbufa = 0;
    static double tbufb = 0;
-   static DecimalFormat intfmt = new DecimalFormat("00");
-   static DecimalFormat decfmt = new DecimalFormat("#0.0000000");
+   static DecimalFormat intfmt = decimalhelper.defaultDecimalFormat("00");
+   static DecimalFormat decfmt = decimalhelper.defaultDecimalFormat("#0.0000000");
 
    /*-----------------------------------------------------------
    *
