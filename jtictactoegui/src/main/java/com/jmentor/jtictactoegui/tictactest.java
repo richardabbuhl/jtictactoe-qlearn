@@ -543,19 +543,8 @@ public class tictactest extends JApplet
          // Switch player.
          player = OP(player);
 
-         if (board.Win(X_SQUARE)) {
-           isPlaying = false;
-           game.Player1_Wins++;
-           game.Num_Games++;
-         } else if (board.Win(O_SQUARE)) {
-           isPlaying = false;
-           game.Player2_Wins++;
-           game.Num_Games++;
-         } else if (board.Tie()) {
-           isPlaying = false;
-           game.Num_Ties++;
-           game.Num_Games++;
-         }
+         // Check if still playing.
+         checkIfPlaying();
 
          /* Let the computer move */
          if (isPlaying) {
@@ -606,19 +595,8 @@ public class tictactest extends JApplet
            // Switch player.
            player = OP(player);
 
-           if (board.Win(X_SQUARE)) {
-             isPlaying = false;
-             game.Player1_Wins++;
-             game.Num_Games++;
-           } else if (board.Win(O_SQUARE)) {
-             isPlaying = false;
-             game.Player2_Wins++;
-             game.Num_Games++;
-           } else if (board.Tie()) {
-             isPlaying = false;
-             game.Num_Ties++;
-             game.Num_Games++;
-           }
+           // Check if still playing.
+           checkIfPlaying();
          }
 
          jPlayer1Wins.setText("Player1 Wins: " + game.Player1_Wins);
@@ -629,7 +607,23 @@ public class tictactest extends JApplet
     }
   }
 
-  public static void main(String[] args)
+    private void checkIfPlaying() {
+        if (board.Win(O_SQUARE)) {
+          isPlaying = false;
+          game.Player1_Wins++;
+          game.Num_Games++;
+        } else if (board.Win(X_SQUARE)) {
+          isPlaying = false;
+          game.Player2_Wins++;
+          game.Num_Games++;
+        } else if (board.Tie()) {
+          isPlaying = false;
+          game.Num_Ties++;
+          game.Num_Games++;
+        }
+    }
+
+    public static void main(String[] args)
   {
     tictactest applet = new tictactest();
     JFrame frame = new JFrame();
