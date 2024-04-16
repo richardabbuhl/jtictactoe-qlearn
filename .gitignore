@@ -25,6 +25,8 @@ _$*
 *.elc
 *.ln
 core
+out
+target
 # CVS default ignores end
 /.idea/
 *.iml
