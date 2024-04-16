@@ -1,1 +1,1 @@
-# jqlearn-tictactoe
+# jtictactoe-qlearn
