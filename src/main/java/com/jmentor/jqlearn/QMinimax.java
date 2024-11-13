@@ -1,22 +1,15 @@
-// Copyright 2002, Richard Abbuhl
-
 package com.jmentor.jqlearn;
 
 import com.jmentor.jtictactoe.Minimax;
 
-public class QMinimax extends Minimax {
+public record QMinimax(int lookAheads, QLearn qlearn) extends Minimax {
 
-   private QLearn qlearn = null;
+    public QMinimax {
+        super(lookAheads);
+    }
 
-   public QMinimax( int lookAheads, QLearn ql )
-   {
-      super(lookAheads);
-      qlearn = ql;
-   }
-
-   public double Evaluate( int [] b, int value )
-   {
-      double result = qlearn.getValue( b );
-      return( result );
-   }
+    public double Evaluate(int[] b, int value) {
+        double result = qlearn.getValue(b);
+        return result;
+    }
 }

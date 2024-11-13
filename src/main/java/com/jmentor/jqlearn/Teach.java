@@ -1,5 +1,3 @@
-// Copyright 2002, Richard Abbuhlv
-
 package com.jmentor.jqlearn;
 
 import com.jmentor.jtictactoe.*;
